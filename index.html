@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages テスト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .status {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .info {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #2196F3;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 GitHub Pages テストページ</h1>
+        
+        <div class="status">
+            ✅ GitHub Pagesが正常に動作しています！
+        </div>
+        
+        <div class="info">
+            <strong>リポジトリ:</strong> perro1214.github.io<br>
+            <strong>作成日時:</strong> <span id="datetime"></span><br>
+            <strong>URL:</strong> https://perro1214.github.io
+        </div>
+        
+        <h2>🎉 おめでとうございます！</h2>
+        <p>GitHub Pagesのセットアップが完了しました。このページが表示されているということは、リポジトリが正しく設定されています。</p>
+        
+        <h3>次のステップ:</h3>
+        <ul>
+            <li>このindex.htmlファイルを編集してコンテンツを追加</li>
+            <li>CSS、JavaScript、画像などのアセットを追加</li>
+            <li>Jekyll、Hugo、Nuxtなどの静的サイトジェネレーターの利用検討</li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('datetime').textContent = new Date().toLocaleString('ja-JP');
+    </script>
+</body>
+</html>
