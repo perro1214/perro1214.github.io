@@ -3,68 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages テスト</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        .status {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-            margin: 20px 0;
-        }
-        .info {
-            background-color: #e7f3ff;
-            padding: 15px;
-            border-left: 4px solid #2196F3;
-            margin: 20px 0;
-        }
-    </style>
+    <title>原田隼人 - ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>🚀 GitHub Pages テストページ</h1>
-        
-        <div class="status">
-            ✅ GitHub Pagesが正常に動作しています！
+    <!-- ナビゲーション -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Hayato Harada</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-        
-        <div class="info">
-            <strong>リポジトリ:</strong> perro1214.github.io<br>
-            <strong>作成日時:</strong> <span id="datetime"></span><br>
-            <strong>URL:</strong> https://perro1214.github.io
-        </div>
-        
-        <h2>🎉 おめでとうございます！</h2>
-        <p>GitHub Pagesのセットアップが完了しました。このページが表示されているということは、リポジトリが正しく設定されています。</p>
-        
-        <h3>次のステップ:</h3>
-        <ul>
-            <li>このindex.htmlファイルを編集してコンテンツを追加</li>
-            <li>CSS、JavaScript、画像などのアセットを追加</li>
-            <li>Jekyll、Hugo、Nuxtなどの静的サイトジェネレーターの利用検討</li>
-        </ul>
-    </div>
+    </nav>
 
-    <script>
-        document.getElementById('datetime').textContent = new Date().toLocaleString('ja-JP');
-    </script>
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">原田隼人</h1>
+            <p class="hero-subtitle">Software Engineer & Competitive Programmer</p>
+            <p class="hero-description">
+                東京都立大学で情報科学の理論を学び、42 Tokyoで実践的な開発経験を積んでいます。<br>
+                理論と実践の両輪で、難易度の高い技術的課題に挑戦し続けています。
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Aboutセクション -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>私のストーリー</h3>
+                    <p>
+                        高校時代の日本情報オリンピック本選出場・入賞をきっかけに、アルゴリズムを用いた問題解決に強い関心を持つようになりました。
+                        現在は東京都立大学で情報科学の基礎理論を学びながら、42 Tokyoで実践的なソフトウェア開発に取り組んでいます。
+                    </p>
+                    <p>
+                        42 TokyoではC言語を用いた低レイヤー開発に注力し、OSの仕組みやメモリ管理といったコンピュータの根幹を理解することに面白さを感じています。
+                        AtCoderでは継続的に能力を磨き、理論と実践の両輪で得た知識と競技プログラミングで培った論理的思考力を活かしています。
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>Education</h4>
+                        <p>東京都立大学 システムデザイン学部<br>情報科学科 2年</p>
+                        <p>42 Tokyo 在学中</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Achievements</h4>
+                        <p>第22回 日本情報オリンピック (JOI)<br>本選出場・入賞 (2023年)</p>
+                        <p>AtCoder 緑 (Rating: 814)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スキルセクション -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Rust</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Technologies & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Linux/Unix</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Makefile</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Specialties</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Algorithm Design</span>
+                        <span class="skill-tag">System Programming</span>
+                        <span class="skill-tag">Computer Graphics</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロジェクトセクション -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- FdF Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>FdF (Fil de Fer)</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/hayato-haba/42_FdF" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        3次元地形データを等角投影による3Dワイヤーフレームで可視化するグラフィック処理プログラム
+                    </p>
+                    <div class="project-highlights">
+                        <h4>技術的ハイライト</h4>
+                        <ul>
+                            <li>Bresenhamアルゴリズムによる高速線描画</li>
+                            <li>動的色彩グラデーション処理の実装</li>
+                            <li>自動スケーリング・センタリング最適化</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">MiniLibX</span>
+                        <span class="tech-tag">Computer Graphics</span>
+                    </div>
+                </div>
+
+                <!-- Tetris AI Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Tetris AI</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/hayato-1023/tetris_AI" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        遺伝的アルゴリズムとニューラルネットワークを組み合わせてテトリスを自動プレイするAIシステム
+                    </p>
+                    <div class="project-highlights">
+                        <h4>技術的ハイライト</h4>
+                        <ul>
+                            <li>遺伝的アルゴリズムによる進化的学習システム</li>
+                            <li>Multiprocessingによる並列処理最適化</li>
+                            <li>224次元入力のニューラルネットワーク設計</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Machine Learning</span>
+                    </div>
+                </div>
+
+                <!-- minitalk Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>minitalk</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/hayatosann/minitalk" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Unixシグナルを用いてプロセス間通信を実現する高精度なメッセージ送受信システム
+                    </p>
+                    <div class="project-highlights">
+                        <h4>技術的ハイライト</h4>
+                        <ul>
+                            <li>バイナリデータ変換とシグナル符号化</li>
+                            <li>リアルタイム非同期処理と状態管理</li>
+                            <li>99.9%以上の通信成功率を実現</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Unix System API</span>
+                        <span class="tech-tag">IPC</span>
+                    </div>
+                </div>
+
+                <!-- ft_printf Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>ft_printf</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/hayato-osh/42_printf" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        C言語標準ライブラリのprintf関数を独自実装した文字列フォーマット出力ライブラリ
+                    </p>
+                    <div class="project-highlights">
+                        <h4>技術的ハイライト</h4>
+                        <ul>
+                            <li>フォーマット指定子ごとの専用処理関数設計</li>
+                            <li>効率的な数値変換アルゴリズムの実装</li>
+                            <li>可変長引数の安全な取り扱い</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">stdarg.h</span>
+                        <span class="tech-tag">System Programming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンタクトセクション -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>新しい技術的挑戦や協働の機会について、お気軽にご連絡ください。</p>
+                    <div class="contact-methods">
+                        <a href="mailto:harada-hayato@ed.tmu.ac.jp" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>harada-hayato@ed.tmu.ac.jp</span>
+                        </a>
+                        <a href="https://github.com/perro1214" target="_blank" class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub: perro1214</span>
+                        </a>
+                        <a href="https://atcoder.jp/users/w0t0" target="_blank" class="contact-method">
+                            <i class="fas fa-code"></i>
+                            <span>AtCoder: w0t0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Hayato Harada. All rights reserved.</p>
+                <p class="footer-note">
+                    知的財産権について：本ポートフォリオに記載の制作物において、自身名義で登録された知的財産権（特許権、実用新案権、意匠権、商標権など）はございません。
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
