@@ -589,3 +589,58 @@ section {
         gap: 1.5rem;
     }
 }
+
+/* Print Styles */
+@media print {
+    .navbar {
+        display: none !important;
+    }
+    
+    .hero-scroll {
+        display: none !important;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+        page-break-inside: avoid;
+    }
+    
+    section {
+        padding: 2rem 0;
+        page-break-inside: avoid;
+    }
+    
+    .project-card {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-method {
+        color: var(--dark-text) !important;
+        background: var(--light-bg) !important;
+    }
+    
+    .contact {
+        color: var(--dark-text) !important;
+        background: var(--light-bg) !important;
+    }
+    
+    .contact .section-title {
+        color: var(--dark-text) !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}

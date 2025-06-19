@@ -3,26 +3,43 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Repository Type
-This is a GitHub Pages repository (perro1214.github.io) for hosting a static website.
+This is a GitHub Pages repository (perro1214.github.io) hosting a professional portfolio website for Hayato Harada.
 
-## Common Commands
-Since this is a new repository, the specific build/development commands will depend on the framework chosen:
+## Architecture Overview
+This is a static portfolio website built with vanilla HTML, CSS, and JavaScript:
 
-### For Jekyll (GitHub Pages default)
-- `bundle exec jekyll serve` - Run local development server
-- `bundle exec jekyll build` - Build the site
-- `bundle install` - Install dependencies
+- **index.html**: Single-page application with sections for hero, about, skills, projects, and contact
+- **style.css**: CSS with custom properties for consistent theming, responsive design, and animations
+- **script.js**: Interactive features including mobile navigation, smooth scrolling, and scroll-based animations
 
-### For general static sites
-- Local development server depends on chosen framework
-- GitHub Pages will automatically build and deploy on push to main branch
+## Design System
+The site uses a cohesive blue color palette defined in CSS custom properties:
+- Primary blue (#4981cf), secondary blue (#89aad3), light purple (#c8cbf2), pale blue (#cadaec)
+- Typography: Inter font family with weight variations (300-700)
+- Responsive design with mobile-first approach
 
-## Architecture Notes
-- This repository will serve as the source for a GitHub Pages site
-- The site will be accessible at https://perro1214.github.io
-- Files in the root directory or `docs/` folder (if configured) will be served
-- GitHub Pages supports Jekyll by default, but can also serve plain HTML/CSS/JS
+## Content Structure
+- Hero section with name, title, and call-to-action buttons
+- About section highlighting educational background (TMU, 42 Tokyo) and JOI achievement
+- Skills section categorized by programming languages, technologies, and specialties
+- Projects section featuring 4 main projects: FdF, Tetris AI, minitalk, and ft_printf
+- Contact section with email, GitHub, and AtCoder links
 
-## Deployment
-- Automatic deployment via GitHub Pages on push to main branch
-- No manual deployment commands needed - GitHub handles this automatically
+## Development Workflow
+- Direct file editing - no build process required
+- Changes are automatically deployed via GitHub Pages on push to main branch
+- Site accessible at https://perro1214.github.io
+
+## Project Links
+All project repository links use the GitHub username "perro1214":
+- FdF: https://github.com/perro1214/42_FdF
+- Tetris AI: https://github.com/perro1214/tetris_AI
+- minitalk: https://github.com/perro1214/42_minitalk
+- ft_printf: https://github.com/perro1214/42_printf
+
+## Key Features
+- Responsive mobile navigation with hamburger menu
+- Smooth scrolling between sections
+- CSS animations and hover effects
+- Intersection Observer for scroll-triggered animations
+- Performance-optimized with throttled scroll events
