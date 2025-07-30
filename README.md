@@ -1,6 +1,6 @@
-# CLAUDE.md
+# Portfolio Website Documentation
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This document describes the structure and implementation of Hayato Harada's portfolio website.
 
 ## Repository Type
 This is a GitHub Pages repository (perro1214.github.io) hosting a professional portfolio website for Hayato Harada.
